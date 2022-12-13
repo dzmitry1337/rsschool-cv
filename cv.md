@@ -21,10 +21,11 @@ I have different personality traits. I'm good in communication, for this reason 
 ## **Projects**
 + That's my first [project](https://github.com/dzmitry1337/rsschool-cv)
 
-## **Aducation**
+## **Education**
 
 + **University:** Belarusian State University of Informatics and Radioelectronics (still studying)
 
-## **English**
-
-A2. My only practice in English was watching films and movies with subtitles.
+## **Languages**
++ **English:** A2. My only practice in English was watching films and movies with subtitles.
++ **Russian:** Native speaker.
++ **Belarusian:** Native speaker.
