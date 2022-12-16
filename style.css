@@ -1,0 +1,12 @@
+.body {
+    color: white;
+    background-image: url(../rsschool-cv/assets/img/background.jpeg);
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+.body.footer {
+    position: relative;
+    left: 0px; bottom: 0px;
+    width: 100%;
+}
