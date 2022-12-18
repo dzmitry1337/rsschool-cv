@@ -4,7 +4,8 @@
 
 ## **Contacts**
 
-+ **Discord:** Ryadovoy Pudge #8832
++ **Discord:** Ryadovoy Pudge #8832 (private messaging account)
++ **Discord:** Ryadovoy_Rudgers1337 #8506
 + **Email:** ryadovoy_pudge@mail.ru
 
 ## **About Me**
@@ -18,7 +19,7 @@ I have different personality traits. I'm good in communication, for this reason 
 + HTML (Basics)
 
 ## **Projects**
-+ That's my first [project](https://github.com/dzmitry1337/rsschool-cv)
++ That's my first [project](https://dzmitry1337.github.io/rsschool-cv/)
 
 ## **Education**
 
