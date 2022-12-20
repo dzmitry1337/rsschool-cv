@@ -2,10 +2,14 @@
     color: white;
     background-image: url(../rsschool-cv/assets/img/background.jpeg);
     background-size: cover;
-    text-align: center;
+    text-align: left;
     position: relative;
-}
-.body.footer {
-    left: 0px; bottom: 0px;
-    width: 100%;
+    display: block;
+    max-width: 1200px;
+    margin: auto;
+    font-size: large;
+    text-shadow: 1px 0 1px #000,
+        0 1px 1px #000,
+        -1px 0 1px #000,
+        0 -1px 1px #000;
 }
