@@ -1,0 +1,23 @@
+Свойство vertical-align выравнивает элементы относительно друг друга по вертикали:
+img {
+    vertical-align: middle; /* Выравнивание по середине */
+   }
+.icon {
+    vertical-align: middle; /* Выравнивание по середине */
+      }
+ <body>
+  <p>
+   <img src="image/animate.png" alt=""><span class="icon">Анимация</span>
+  </p>
+ </body>
+  
+
+Преобразование в блочный элемент display: block, в строчный display: inline
+
+
+Убрать подчёркивание ссылок: 
+a {
+text-decoration: none;
+}
+
+
