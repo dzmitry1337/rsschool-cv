@@ -10,120 +10,124 @@
 </head>
 
 <body class="body">
-    <header>
+    <header class="header">
         <h1><em><strong>Loseu Dzmitry</strong></em></h1>
         <img src="./assets/img/avatar.png" alt="avatar.png" width="200" height="200">
     </header>
     <main class="main">
-    <nav>
-        <ul class="nav">
-            <li><a href="#contacts">Contacts</a></li>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#code-example">Code example</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#languages">Languages</a></li>
-        </ul>
-    </nav>
-    <article class="article">
-        <section>
-            <h2 id="contacts">Contacts</h2>
-            <ul>
-                <li>Discord: Ryadovoy Pudge #8832 (private messaging account)</li>
-                <li>Discord: Ryadovoy_Rudgers1337 #8506</li>
-                <li>email: dimilo_losev@mail.ru</li>
+        <nav>
+            <ul class="nav">
+                <li><a href="#contacts">Contacts</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#code-example">Code example</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#languages">Languages</a></li>
             </ul>
-        </section>
-        <section>
-            <h2 id="about-me">About Me</h2>
-            <span>I have different personality traits. I'm good in communication, for this reason I like to work in a
-                team. I
-                have a responsible attitude to work and study.</span>
-        </section>
-        <section>
-            <h2 id="skills">Skills</h2>
-            <ul>
-                <li>C++ (Basics)</li>
-                <li>Git (Basics)</li>
-                <li>HTML (Basics)</li>
-            </ul>
-        </section>
-        <section>
-            <h2 id="code-example">Code example</h2>
-            <pre>
+        </nav>
+        <article class="article">
+            <section>
+                <h2 id="contacts">Contacts</h2>
+                <ul>
+                    <li>Discord: Ryadovoy Pudge #8832 (private messaging account)</li>
+                    <li>Discord: Ryadovoy_Rudgers1337 #8506</li>
+                    <li>email: dimilo_losev@mail.ru</li>
+                </ul>
+            </section>
+            <section>
+                <h2 id="about-me">About Me</h2>
+                <span>I have different personality traits. I'm good in communication, for this reason I like to work in
+                    a
+                    team. I
+                    have a responsible attitude to work and study.</span>
+            </section>
+            <section>
+                <h2 id="skills">Skills</h2>
+                <ul>
+                    <li>C++ (Basics)</li>
+                    <li>Git (Basics)</li>
+                    <li>HTML (Basics)</li>
+                </ul>
+            </section>
+            <section>
+                <h2 id="code-example">Code example</h2>
+                <pre>
 <code>
-        #include &lt;stdlib.h&gt;
-        #include &lt;stdio.h&gt;
-        #include &lt;locale.h>&gt;
-        #include &lt;math.h&gt;
-        double max(double x,double y);
-        double min(double x,double y);
-        void chek(double a, double b);
-        int main()
+#include &lt;stdlib.h&gt;
+#include &lt;stdio.h&gt;
+#include &lt;locale.h&gt;
+#include &lt;math.h&gt;
+double max(double x,double y);
+double min(double x,double y);
+void chek(double a, double b);
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    printf_s("Введите переменные x и y \n");
+    double x, y;
+    scanf_s("%lf %lf", &x, &y);
+    int a = 0;
+    chek(x, y);
+    return 0;
+}
+void chek(double a, double b)
+{
+    bool t = 1;
+    while (t)
+    {
+        int x = scanf_s("%lf %lf", &a, &b);
+        if (x != 2)
         {
-            setlocale(LC_ALL, "Russian");
-            printf_s("Введите переменные x и y \n");
-            double x, y;
-            scanf_s("%lf %lf", &x, &y);
-            int a = 0;
-            chek(x, y);
-            return 0;
+            printf_s("Вы ввели не число или не 2 числа, введите ещё раз 2 числа \n");
+            //fflush(stdin);
+            scanf_s("%lf %lf", &a, &b);
+            x = scanf_s("%lf %lf", &a, &b);
+            t = 0;
         }
-        void chek(double a, double b)
-        {
-            bool t = 1;
-            while (t)
-            {
-                int x = scanf_s("%lf %lf", &a, &b);
-                if (x != 2)
-                {
-                    printf_s("Вы ввели не число или не 2 числа, введите ещё раз 2 числа \n");
-                    //fflush(stdin);
-                    scanf_s("%lf %lf", &a, &b);
-                    x = scanf_s("%lf %lf", &a, &b);
-                    t = 0;
-                }
-                else break;
-            }
-        }
-            double max(double x, double y)
-            {
-                if (x &gt; y)
-                    return x;
-                else return y;
-            }
-            double min(double x, double y)
-            {
-                if (x &lt; y)
-                    return x;
-                else return y;
-            }
+        else break;
+    }
+}
+    double max(double x, double y)
+    {
+        if (x &gt; y)
+        return x;
+        else return y;
+    }
+    double min(double x, double y)
+    {
+        if (x &lt; y)
+        return x;
+        else return y;
+    }
 </code>
 </pre>
-        </section>
-        <section>
-            <h2 id="projects">Projects</h2>
-            <span>That's my first <a href="https://dzmitry1337.github.io/rsschool-cv/">project</a></span>
-        </section>
-        <section>
-            <h2 id="education">Education</h2>
-            <span>University: Belarusian State University of Informatics and Radioelectronics (still studying)</span>
-        </section>
-        <section>
-            <h2 id="languages">Languages</h2>
-            <ul>
-                <li>English: A2. My only practice in English was watching films and movies with subtitles.</li>
-                <li>Russian: Native speaker.</li>
-                <li>Belarusian: Native speaker.</li>
-            </ul>
-        </section>
+            </section>
+            <section>
+                <h2 id="projects">Projects</h2>
+                <span>That's my first <a href="https://dzmitry1337.github.io/rsschool-cv/">project</a></span>
+            </section>
+            <section>
+                <h2 id="education">Education</h2>
+                <span>University: Belarusian State University of Informatics and Radioelectronics (still
+                    studying)</span>
+            </section>
+            <section>
+                <h2 id="languages">Languages</h2>
+                <ul>
+                    <li>English: A2. My only practice in English was watching films and movies with subtitles.</li>
+                    <li>Russian: Native speaker.</li>
+                    <li>Belarusian: Native speaker.</li>
+                </ul>
+            </section>
         </article>
     </main>
     <footer>
         <a href="https://github.com/dzmitry1337">My GitHub account</a>
         <span> 2022 </span>
-        <a href="https://rs.school/js-stage0/"> <img src="./assets/img/RSSchool-logo.png" alt="RSSchool-logo" width="100" height="50"></a>
+        <a href="https://rs.school/js-stage0/"> <img src="./assets/img/RSSchool-logo.png" alt="RSSchool-logo"
+                width="100" height="50"></a>
     </footer>
 </body>
+
 </html>

@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 .body {
     color: white;
     background-image: url(../rsschool-cv/assets/img/background.jpeg);
@@ -7,9 +10,10 @@
     text-align: left;
     position: relative;
     display: flex;
+    min-height: 100vh;
     flex-direction: column;
     max-width: 1440px;
-    margin: 0 auto;
+    margin: auto;
     font-size: large;
     text-shadow: 1px 0 1px #000,
         0 1px 1px #000,
@@ -21,11 +25,16 @@ a {
     text-decoration: none;
     color: yellow;
 }
-
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1rem;
+}
 .main {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 
 .nav {
@@ -46,6 +55,7 @@ a {
     display: flex;
     flex-flow: column wrap;
    flex: 0 1 auto;
+   margin-left: 1rem;
 }
 
 footer {
