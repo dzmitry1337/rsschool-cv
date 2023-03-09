@@ -26,7 +26,7 @@
                 <li><a href="#languages">Languages</a></li>
             </ul>
         </nav>
-        <article class="article">
+        <div class="article">
             <section>
                 <h2 id="contacts">Contacts</h2>
                 <ul>
@@ -58,15 +58,15 @@
 #include &lt;stdio.h&gt;
 #include &lt;locale.h&gt;
 #include &lt;math.h&gt;
-double max(double x,double y);
-double min(double x,double y);
+double max(double x, double y);
+double min(double x, double y);
 void chek(double a, double b);
 int main()
 {
     setlocale(LC_ALL, "Russian");
     printf_s("Введите переменные x и y \n");
     double x, y;
-    scanf_s("%lf %lf", &x, &y);
+    scanf_s("%lf %lf", &amp;x, &amp;y);
     int a = 0;
     chek(x, y);
     return 0;
@@ -76,13 +76,13 @@ void chek(double a, double b)
     bool t = 1;
     while (t)
     {
-        int x = scanf_s("%lf %lf", &a, &b);
+        int x = scanf_s("%lf %lf", &amp;a, &amp;b);
         if (x != 2)
         {
             printf_s("Вы ввели не число или не 2 числа, введите ещё раз 2 числа \n");
             //fflush(stdin);
-            scanf_s("%lf %lf", &a, &b);
-            x = scanf_s("%lf %lf", &a, &b);
+            scanf_s("%lf %lf", &amp;a, &amp;b);
+            x = scanf_s("%lf %lf", &amp;a, &amp;b);
             t = 0;
         }
         else break;
@@ -120,7 +120,7 @@ void chek(double a, double b)
                     <li>Belarusian: Native speaker.</li>
                 </ul>
             </section>
-        </article>
+        </div>
     </main>
     <footer>
         <a href="https://github.com/dzmitry1337">My GitHub account</a>
